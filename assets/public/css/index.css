@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik+Doodle+Shadow&display=swap');
+
+:root {
+  --bodyCorPrimaria: rgb(253, 78, 165);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(255, 105, 180);
+  background: linear-gradient(
+    99deg,
+    rgb(253, 78, 165) 5%,
+    rgba(244, 34, 148, 1) 49%,
+    rgba(216, 47, 147, 1) 98%
+  );
+}
+
+nav .nav-index {
+  display: flex;
+  justify-content: space-between; /* Isso separará os elementos horizontalmente */
+  align-items: center; /* Isso alinhará os elementos verticalmente */
+  background: rgb(255, 105, 180);
+  background: linear-gradient(
+    153deg,
+    rgb(248, 111, 180) 5%,
+    rgba(216, 47, 147, 1) 98%
+  );
+  box-shadow: #8a3e79 0px 0.1px 10px 1px;
+  overflow: hidden;
+}
+
+nav .nav-index .icon .iconstar {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  margin-left: 42px;
+  border-radius: 100%;
+}
+
+nav .nav-index ul {
+  display: flex;
+  gap: 10px;
+  margin-right: 42px;
+  list-style: none; /* Remova o marcador de lista */
+  padding: 0; /* Remova o preenchimento padrão */
+}
+
+nav .nav-index ul li {
+  list-style: none;
+}
+nav .nav-index ul li a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #d3d3d3;
+  transition: 0.3s ease-in-out;
+}
+
+nav .nav-index ul li a:hover {
+  opacity: 0.5;
+}
+
+nav .nav-index ul li .logar {
+  background-color: #2857e4;
+  padding: 4px;
+  border-radius: 4px;
+  color: black;
+}
+.section-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-index .section-content > .icon img {
+}
+.section-index .section-content > .icon img {
+  width: 40vh;
+  height: 40vh;
+  border-radius: 100%;
+  margin-top: 60px;
+  animation: levitar 4s infinite ease-in-out; /* Aplicando a animação */
+}
+
+@keyframes levitar {
+  0% {
+    transform: translateY(0); /* Definindo a posição inicial */
+  }
+  50% {
+    transform: translateY(-20px); /* Flutuação para cima */
+  }
+  100% {
+    transform: translateY(0); /* Retornando à posição inicial */
+  }
+}
+
+.section-text-and-buttom h1 {
+  text-align: center;
+  justify-content: center;
+  color: #ffb6c1;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 35px;
+}
+
+.section-text-and-buttom h1::after {
+  content: "🦋";
+}
+.section-text-and-buttom .buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.section-text-and-buttom .buttons a {
+  display: flex;
+  padding: 9px 9px;
+  border-radius: 4px;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 600;
+  font-style: normal
+}
+
+.section-text-and-buttom .buttons a:nth-child(1) {
+  background-color: #adadad;
+  color: #8b008b;
+}
+.section-text-and-buttom .buttons a:nth-child(2) {
+  background-color: #8b008b;
+  color: #adadad;
+}
+.teste {
+  padding: 100px;
+  border: 1;
+}
